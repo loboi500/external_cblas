@@ -1,15 +1,3 @@
-dlvl = ./.
-include $(dlvl)/../Makefile.in
-
-all: example1 example2
-
-example1: 
-	$(CC) -c $(CFLAGS) -I../src cblas_example1.c
-	$(LOADER) -o cblas_ex1 cblas_example1.o $(CBLIB) $(BLLIB)
-
-example2: 
-	$(CC) -c $(CFLAGS) -I../src cblas_example2.c
-	$(LOADER) -o cblas_ex2 cblas_example2.o $(CBLIB) $(BLLIB)
-   
-cleanall:
-	rm -f *.o cblas_ex1 cblas_ex2
+version https://git-lfs.github.com/spec/v1
+oid sha256:821838acbef4852f08d89866a35f19100dd790badefac9506b3467cbeba82c4b
+size 345
